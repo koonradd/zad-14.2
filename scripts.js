@@ -1,6 +1,6 @@
 
 
-
+//nie wiem jak te zdjecia dodac
 
 
 var movies = [
@@ -14,7 +14,7 @@ var movies = [
     id: 2,
     title: 'Król Lew',
     desc: 'Film o królu sawanny',
-    img.src: 'http://garafova.com/wp-content/uploads/2017/05/infographic_KPJS_print.jpg'
+    img: 'http://garafova.com/wp-content/uploads/2017/05/infographic_KPJS_print.jpg'
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ var moviesElements = movies.map(function(movie) {
   return React.createElement('li', {key: movie.id},
       React.createElement('h2', {}, movie.title),
       React.createElement('p', {}, movie.desc)
-       React.createElement('p', {}, movie.img.src)
+       React.createElement('img', {src:''}, movie.img)
     );
 });
 
