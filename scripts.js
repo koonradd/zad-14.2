@@ -1,8 +1,5 @@
 
 
-//nie wiem jak te zdjecia dodac
-
-
 var movies = [
   {
     id: 1, 
@@ -53,7 +50,7 @@ var moviesElements = movies.map(function(movie) {
       React.createElement('h2', {}, movie.title),
 
       React.createElement('p', {}, movie.desc),
-     React.createElement('img', {src: movie.img}),
+     React.createElement('img', {src: movie.img})
 
 
     );
@@ -63,7 +60,7 @@ var moviesElements = movies.map(function(movie) {
 var element =
   React.createElement('div', {},
     React.createElement('h1', {}, 'Lista filmów'),
-    React.createElement('ul', {}, moviesElements),
+    React.createElement('ul', {}, moviesElements)
                   
   );
 
